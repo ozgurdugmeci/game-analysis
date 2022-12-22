@@ -956,7 +956,7 @@ try:
  
     
   
- st.header ('Score Difference - Substitution Number Graph') 
+ st.write ('Score Difference - Substitution Number Graph') 
  
  
  
@@ -969,7 +969,7 @@ try:
  graph_away=container_final_away[['Sub_No','Dif2']] 
  graph_away=graph_away.drop_duplicates(subset=['Sub_No'])
  graph_away.columns= ['Substitution Number','Score Difference']
- 'Click on the bars to view the stats of the players on the court'
+ 'Click on the bars to view the stats of the players on the court. On mobile use zoom in and pan from graph menu for a better performance.'
  if secy== 'Home Team':
   resm=df_clubs.loc[df_clubs['code']==home].copy()
   resm=resm['crest'].values.tolist()
