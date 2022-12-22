@@ -969,13 +969,13 @@ try:
  graph_away=container_final_away[['Sub_No','Dif2']] 
  graph_away=graph_away.drop_duplicates(subset=['Sub_No'])
  graph_away.columns= ['Substitution Number','Score Difference']
- 
+ 'Click on the bars to view the stats of the players on the court'
  if secy== 'Home Team':
   resm=df_clubs.loc[df_clubs['code']==home].copy()
   resm=resm['crest'].values.tolist()
   st.image (resm[0],width=40)
  
-  fig = px.bar(graph_home, x="Substitution Number", y="Score Difference",title="Click on the bars to view the stats of the players on the court") 
+  fig = px.bar(graph_home, x="Substitution Number", y="Score Difference",title="") 
   selected_points = plotly_events(fig)
   
  elif secy=='Away Team':
@@ -983,7 +983,7 @@ try:
   resm=resm['crest'].values.tolist()
   st.image (resm[0],width=40)
  
-  fig = px.bar(graph_away, x="Substitution Number", y="Score Difference",title="Click on the bars to view the stats of the players on the court") 
+  fig = px.bar(graph_away, x="Substitution Number", y="Score Difference",title="") 
   selected_points = plotly_events(fig)
   #fig = px.bar(df_envo, y="Tip", x="Oran" ,width=350, height=250, orientation='h' ) 
   #fig.layout.xaxis.tickformat = ',.2%'
