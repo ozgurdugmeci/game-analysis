@@ -956,7 +956,7 @@ try:
  
     
   
- st.subheader ('Score Difference - Substitution Number Graph') 
+ st.subheader ('Score Difference - Substitutions') 
  
  
  
