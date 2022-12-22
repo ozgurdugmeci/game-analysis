@@ -950,7 +950,7 @@ try:
     #st.dataframe(df_away_ilk5)
  
  
- secy = st.radio("Seçim yapınız",('Home Team','Away Team'))
+ secy = st.radio("Choose: ",('Home Team','Away Team'))
  #st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
  
  
