@@ -1086,7 +1086,27 @@ except:
  'Or check your internet connection and refresh the link.'	
    
    
-   
+takip= """
+<!-- Default Statcounter code for game_analysis
+https://euroleaguegames.streamlit.app -->
+<script type="text/javascript">
+var sc_project=12829655; 
+var sc_invisible=1; 
+var sc_security="23f28648"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12829655/0/23f28648/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+"""
+#st.markdown(takip, unsafe_allow_html=True)  
+components.html(takip,width=200, height=200)     
    
    
    
