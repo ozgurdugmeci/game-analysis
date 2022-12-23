@@ -1060,7 +1060,7 @@ try:
     st.image(foto[4],caption=namo[4]+', '+pos[4],width=140)
    except:
     pass
-  a  
+    
   shining_home= shining_home[['jerseyName','Score+','Assist','Rebaund','Blok','Steal','TurnOver']]
   shining_home.columns=['Player Name','Score','Assist','Rebaund','Block','Steal','Turnover']
   shining_home=shining_home.reset_index(drop=True)
