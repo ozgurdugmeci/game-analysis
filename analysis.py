@@ -965,17 +965,20 @@ try:
  graph_home=container_final_home[['Sub_No','Dif2']] 
  graph_home=graph_home.drop_duplicates(subset=['Sub_No'])
  graph_home.columns= ['Substitution Number','Score Difference']
+ graph_home['Score Difference']=graph_home['Score Difference'].replace(0,0.5)
  
  graph_away=container_final_away[['Sub_No','Dif2']] 
  graph_away=graph_away.drop_duplicates(subset=['Sub_No'])
  graph_away.columns= ['Substitution Number','Score Difference']
+ graph_away['Score Difference']=graph_away['Score Difference'].replace(0,0.5)
+ 
  '<< Click on the bars to view the stats of the playing 5 on the court >> On mobile, use zoom in and pan options from graph menu for a better monitoring.'
  if secy== 'Home Team':
   resm=df_clubs.loc[df_clubs['code']==home].copy()
   resm=resm['crest'].values.tolist()
   st.image (resm[0],width=40)
  
-  fig = px.line(graph_home, x="Substitution Number", y="Score Difference",markers=True,title="") 
+  fig = px.bar(graph_home, x="Substitution Number", y="Score Difference",title="") 
   selected_points = plotly_events(fig)
   
  elif secy=='Away Team':
