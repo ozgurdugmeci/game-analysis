@@ -972,7 +972,7 @@ try:
  graph_away.columns= ['Substitution Number','Score Difference']
  graph_away['Score Difference']=graph_away['Score Difference'].replace(0,0.5)
  
- '<< Click on the bars to view the stats of the playing 5 on the court >> On mobile, use zoom in and pan options from graph menu for a better monitoring.'
+ '<< Click on the bars to view the stats of the playing 5 on the court >> On mobile, use zoom in and pan and other options from graph menu for a better monitoring.'
  if secy== 'Home Team':
   resm=df_clubs.loc[df_clubs['code']==home].copy()
   resm=resm['crest'].values.tolist()
