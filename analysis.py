@@ -975,7 +975,7 @@ try:
   resm=resm['crest'].values.tolist()
   st.image (resm[0],width=40)
  
-  fig = px.bar(graph_home, x="Substitution Number", y="Score Difference",title="") 
+  fig = px.line(graph_home, x="Substitution Number", y="Score Difference",markers=True,title="") 
   selected_points = plotly_events(fig)
   
  elif secy=='Away Team':
