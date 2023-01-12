@@ -976,7 +976,7 @@ try:
  if secy== 'Home Team':
   resm=df_clubs.loc[df_clubs['code']==home].copy()
   resm=resm['crest'].values.tolist()
-  st.image (resm[0],width=40)
+  st.image (resm[0],width=60)
  
   fig = px.bar(graph_home, x="Substitution Number", y="Score Difference",title="") 
   selected_points = plotly_events(fig)
@@ -984,7 +984,7 @@ try:
  elif secy=='Away Team':
   resm=df_clubs.loc[df_clubs['code']==away].copy()
   resm=resm['crest'].values.tolist()
-  st.image (resm[0],width=40)
+  st.image (resm[0],width=60)
  
   fig = px.bar(graph_away, x="Substitution Number", y="Score Difference",title="") 
   selected_points = plotly_events(fig)
