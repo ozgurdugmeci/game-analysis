@@ -1033,7 +1033,7 @@ try:
   score_oponent=scoro=shining_home['Score-'].max()
   tot=shining_home['Top_Puan'].max()
   
-  'Starting from ' + str(markero) +  ' with the result: ' +str(bas[0]) +' during ' + str(q[0]) + ', they stayed on the court ' + str(round(secondo/60,1)) + ' minutes, scored '+ str(scorly) + ' points and let oppenent score '+ str(score_oponent) + ' points; \
+  'Starting from ' + str(markero) +  ' with the result: ' +str(bas[0]) +' during ' + str(q[0]) + ', they stayed on the court ' + str(round(secondo/60,1)) + ' minutes, scored '+ str(scorly) + ' points and let opponent score '+ str(score_oponent) + ' points; \
   finally produced ' + str(tot) + ' contribution points, ending their time with the result: ' +son[0]
   
   sutun1,sutun2,sutun3,sutun4,sutun5 = st.columns (5)
