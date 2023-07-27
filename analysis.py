@@ -1086,7 +1086,8 @@ try:
   
   	
 except:
- 'Or check your internet connection and refresh the link.'	
+ 'New season has not started yet.'
+ #'Or check your internet connection and refresh the link.'	
    
    
 takip= """
